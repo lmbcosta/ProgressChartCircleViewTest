@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,41 +14,142 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProgressChartCircleViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zgu-ac-TZE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Da2-PC-wW8"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4b-PI-U5r" customClass="ProgressChartCircleView" customModule="ProgressChartCircleViewTest" customModuleProvider="target">
-                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xt-ct-JaH">
+                                <rect key="frame" x="77" y="114" width="220" height="220"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-jB-wxa" customClass="ProgressChartCircleView" customModule="ProgressChartCircleViewTest" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="200" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="26J-Dh-V2g"/>
+                                            <constraint firstAttribute="height" constant="200" id="iom-qU-Py5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="04z-zf-bWf"/>
-                                    <constraint firstAttribute="height" constant="200" id="qCE-4j-bEK"/>
+                                    <constraint firstAttribute="height" constant="220" id="AqW-nL-KH6"/>
+                                    <constraint firstAttribute="width" constant="220" id="Rby-bZ-cai"/>
+                                    <constraint firstItem="KN1-jB-wxa" firstAttribute="centerX" secondItem="7xt-ct-JaH" secondAttribute="centerX" id="jD6-FM-egb"/>
+                                    <constraint firstItem="KN1-jB-wxa" firstAttribute="centerY" secondItem="7xt-ct-JaH" secondAttribute="centerY" id="y3t-Qd-fR3"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXq-7w-yBr">
-                                <rect key="frame" x="164" y="597" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aP8-6y-DWE">
+                                <rect key="frame" x="77" y="114" width="220" height="220"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gby-6M-DAn" customClass="ProgressChartCircleView" customModule="ProgressChartCircleViewTest" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="200" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="msH-5m-8JL"/>
+                                            <constraint firstAttribute="height" constant="200" id="y6r-Yj-TdY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Gby-6M-DAn" firstAttribute="centerX" secondItem="aP8-6y-DWE" secondAttribute="centerX" id="3YQ-et-Zpu"/>
+                                    <constraint firstItem="Gby-6M-DAn" firstAttribute="centerY" secondItem="aP8-6y-DWE" secondAttribute="centerY" id="Tzj-EL-7Il"/>
+                                    <constraint firstAttribute="width" constant="220" id="dIL-YP-zMJ"/>
+                                    <constraint firstAttribute="height" constant="220" id="ibA-HO-1I2"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gug-nw-Lo8">
+                                <rect key="frame" x="0.0" y="387" width="375" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="2Xi-zy-d8q"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="64" id="E55-P8-2a3" customClass="MyTableViewCell" customModule="ProgressChartCircleViewTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E55-P8-2a3" id="ca9-oQ-gXE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kt-fF-pgM">
+                                                    <rect key="frame" x="26" y="20" width="50.5" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="tgs-zb-HAx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsJ-P7-NQB">
+                                                    <rect key="frame" x="84" y="20" width="48" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="aag-Sg-FXq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rsJ-P7-NQB" firstAttribute="leading" secondItem="5kt-fF-pgM" secondAttribute="trailing" constant="8" id="ElV-Ln-isj"/>
+                                                <constraint firstItem="5kt-fF-pgM" firstAttribute="centerY" secondItem="ca9-oQ-gXE" secondAttribute="centerY" id="NZx-5Y-Q3r"/>
+                                                <constraint firstItem="5kt-fF-pgM" firstAttribute="leading" secondItem="ca9-oQ-gXE" secondAttribute="leadingMargin" constant="18" id="RBH-zf-eLV"/>
+                                                <constraint firstItem="rsJ-P7-NQB" firstAttribute="centerY" secondItem="ca9-oQ-gXE" secondAttribute="centerY" id="chS-mR-adT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="percentageLabel" destination="rsJ-P7-NQB" id="xuM-Z4-PRK"/>
+                                            <outlet property="titleLabel" destination="5kt-fF-pgM" id="Ex4-HQ-1Q6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yfq-lk-XUj">
+                                <rect key="frame" x="115" y="46" width="145" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="rW4-xO-mFb"/>
+                                    <constraint firstAttribute="width" constant="145" id="srM-QO-yRg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Static"/>
+                                    <segment title="Animated"/>
+                                </segments>
+                                <color key="tintColor" red="0.48941148477157359" green="0.48941148477157359" blue="0.48941148477157359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZqB-zO-ao1"/>
+                                    <action selector="segmentTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="YWY-ww-Plv"/>
                                 </connections>
-                            </button>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="a4b-PI-U5r" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7d9-Gc-x30"/>
-                            <constraint firstItem="a4b-PI-U5r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U3z-8i-nC2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nXq-7w-yBr" secondAttribute="bottom" constant="40" id="at3-iN-ZBD"/>
-                            <constraint firstItem="nXq-7w-yBr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j36-Qg-VuX"/>
+                            <constraint firstItem="gug-nw-Lo8" firstAttribute="bottom" secondItem="Da2-PC-wW8" secondAttribute="top" id="7vG-m6-bUf"/>
+                            <constraint firstItem="gug-nw-Lo8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lml-7f-a6j"/>
+                            <constraint firstItem="aP8-6y-DWE" firstAttribute="top" secondItem="yfq-lk-XUj" secondAttribute="bottom" constant="40" id="N25-fJ-oUz"/>
+                            <constraint firstItem="7xt-ct-JaH" firstAttribute="top" secondItem="yfq-lk-XUj" secondAttribute="bottom" constant="40" id="Qqo-ie-nDQ"/>
+                            <constraint firstItem="aP8-6y-DWE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dao-r0-bLZ"/>
+                            <constraint firstItem="yfq-lk-XUj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAL-Ja-7eL"/>
+                            <constraint firstItem="7xt-ct-JaH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kH4-nd-1zE"/>
+                            <constraint firstItem="gug-nw-Lo8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="kzq-LH-kwx"/>
+                            <constraint firstItem="yfq-lk-XUj" firstAttribute="top" secondItem="Zgu-ac-TZE" secondAttribute="bottom" constant="26" id="npU-aH-h5o"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="circleChart" destination="a4b-PI-U5r" id="72S-sw-LmK"/>
+                        <outlet property="animatedCircle" destination="Gby-6M-DAn" id="2jy-eq-do5"/>
+                        <outlet property="animatedView" destination="aP8-6y-DWE" id="EQh-nD-qLX"/>
+                        <outlet property="segmentControl" destination="yfq-lk-XUj" id="eje-Q3-hjX"/>
+                        <outlet property="staticCircle" destination="KN1-jB-wxa" id="3XA-aR-bIN"/>
+                        <outlet property="staticView" destination="7xt-ct-JaH" id="T9P-qd-NMt"/>
+                        <outlet property="tableView" destination="gug-nw-Lo8" id="upq-fJ-36R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="36" y="32.833583208395808"/>
         </scene>
     </scenes>
 </document>

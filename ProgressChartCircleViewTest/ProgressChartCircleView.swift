@@ -157,7 +157,7 @@ extension ProgressChartCircleView {
                     break
                 }
                 
-                _label.count(fromValue: Float(_models[i].startPercentage), to: Float(_models[i].endPercentage), withDuration: duration, animationType: animationTypeLabel, counterType: counterLabel)
+                _label.count(fromValue: Float(0), to: Float(_models[i].endPercentage - _models[i].startPercentage), withDuration: duration, animationType: animationTypeLabel, counterType: counterLabel)
                 
             } else {
                 if i == index {
@@ -168,7 +168,7 @@ extension ProgressChartCircleView {
         }
     }
     
-    func animateChartelement(with id: Int, withAnimation: Bool) {
+    func animateChartElement(atIndex index: Int) {
         // TODO:
     }
 }
