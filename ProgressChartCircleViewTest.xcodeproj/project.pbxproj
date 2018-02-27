@@ -14,6 +14,7 @@
 		4902E15E2044DA5B00A9420D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4902E15C2044DA5B00A9420D /* LaunchScreen.storyboard */; };
 		4902E1662044DA8A00A9420D /* ProgressChartCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902E1652044DA8A00A9420D /* ProgressChartCircleView.swift */; };
 		4902E1682044DAF300A9420D /* ProgressCircleChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902E1672044DAF300A9420D /* ProgressCircleChartModel.swift */; };
+		80950E162045D6D1004556CC /* CountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80950E152045D6D1004556CC /* CountingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4902E15F2044DA5B00A9420D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4902E1652044DA8A00A9420D /* ProgressChartCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressChartCircleView.swift; sourceTree = "<group>"; };
 		4902E1672044DAF300A9420D /* ProgressCircleChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleChartModel.swift; sourceTree = "<group>"; };
+		80950E152045D6D1004556CC /* CountingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4902E15F2044DA5B00A9420D /* Info.plist */,
 				4902E1652044DA8A00A9420D /* ProgressChartCircleView.swift */,
 				4902E1672044DAF300A9420D /* ProgressCircleChartModel.swift */,
+				80950E152045D6D1004556CC /* CountingLabel.swift */,
 			);
 			path = ProgressChartCircleViewTest;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80950E162045D6D1004556CC /* CountingLabel.swift in Sources */,
 				4902E1662044DA8A00A9420D /* ProgressChartCircleView.swift in Sources */,
 				4902E1562044DA5B00A9420D /* ViewController.swift in Sources */,
 				4902E1542044DA5B00A9420D /* AppDelegate.swift in Sources */,

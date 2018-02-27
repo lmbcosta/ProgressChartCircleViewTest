@@ -32,11 +32,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         circleChart.strokeLineWidth = 20
-        circleChart.selectedStrokeColor = .green
+        circleChart.selectedStrokeColor = .red
         circleChart.backgroundStrokeColor = .lightGray
         circleChart.setModels(models: models)
         circleChart.labelFont = UIFont.systemFont(ofSize: 52, weight: .medium)
-        circleChart.labelSize = CGSize(width: 120, height: 66)
+        circleChart.labelSize = CGSize(width: 140, height: 66)
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         index += 1
         print("\(index)")
         if index == models.count { index = 0 }
-        circleChart.animateChartElement(atIndex: index)
+        circleChart.animateChartElement(atIndex: index, animated: true, duration: 0.5, animationType: .linear, counterType: .int)
     }
 }
 
