@@ -12,6 +12,8 @@
 		4902E1592044DA5B00A9420D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4902E1572044DA5B00A9420D /* Main.storyboard */; };
 		4902E15B2044DA5B00A9420D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4902E15A2044DA5B00A9420D /* Assets.xcassets */; };
 		4902E15E2044DA5B00A9420D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4902E15C2044DA5B00A9420D /* LaunchScreen.storyboard */; };
+		4902E1662044DA8A00A9420D /* ProgressChartCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902E1652044DA8A00A9420D /* ProgressChartCircleView.swift */; };
+		4902E1682044DAF300A9420D /* ProgressCircleChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902E1672044DAF300A9420D /* ProgressCircleChartModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4902E15A2044DA5B00A9420D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4902E15D2044DA5B00A9420D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4902E15F2044DA5B00A9420D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4902E1652044DA8A00A9420D /* ProgressChartCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressChartCircleView.swift; sourceTree = "<group>"; };
+		4902E1672044DAF300A9420D /* ProgressCircleChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleChartModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				4902E15A2044DA5B00A9420D /* Assets.xcassets */,
 				4902E15C2044DA5B00A9420D /* LaunchScreen.storyboard */,
 				4902E15F2044DA5B00A9420D /* Info.plist */,
+				4902E1652044DA8A00A9420D /* ProgressChartCircleView.swift */,
+				4902E1672044DAF300A9420D /* ProgressCircleChartModel.swift */,
 			);
 			path = ProgressChartCircleViewTest;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4902E1662044DA8A00A9420D /* ProgressChartCircleView.swift in Sources */,
 				4902E1562044DA5B00A9420D /* ViewController.swift in Sources */,
 				4902E1542044DA5B00A9420D /* AppDelegate.swift in Sources */,
+				4902E1682044DAF300A9420D /* ProgressCircleChartModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
